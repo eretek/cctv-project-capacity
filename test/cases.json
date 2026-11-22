@@ -1,0 +1,50 @@
+{
+ "tests": [
+  {
+   "in": {
+    "csv": "group,cams,mbps,sub_mbps,poe_w,hours,days\nDış cephe,16,6,0.7,12.95,24,30\nİç alan,24,3,0.5,6,24,30\nPTZ,4,8,1,25.5,24,30",
+    "oh": 10,
+    "usable": 80,
+    "std": "at",
+    "budget": 740,
+    "margin": 10,
+    "uplink": 1000,
+    "viewers": 16
+   },
+   "v": {
+    "cams": 44,
+    "storageTB": 71.28,
+    "ingest": 200,
+    "poeW": 651.2,
+    "poeOk": true
+   }
+  },
+  {
+   "in": {
+    "csv": "group,cams,mbps,poe_w,days\nMağaza,8,4,7,15",
+    "oh": 10,
+    "std": "af",
+    "budget": 120,
+    "margin": 0
+   },
+   "v": {
+    "cams": 8,
+    "storageTB": 5.702,
+    "poeW": 75.6,
+    "poeOk": true
+   }
+  },
+  {
+   "in": {
+    "csv": "group,cams\nA,4"
+   },
+   "err": "csv"
+  },
+  {
+   "in": {
+    "csv": "group,cams,mbps,days\nA,4,x,30"
+   },
+   "err": "csv"
+  }
+ ]
+}

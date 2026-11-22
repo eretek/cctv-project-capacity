@@ -1,0 +1,15 @@
+{
+  "name": "cctv-project-capacity",
+  "version": "1.1.3",
+  "private": true,
+  "description": "Calculate recording storage, NVR bandwidth, PoE power budget and port count from camera groups at once; download as XLSX for quotes and project files.",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://kamera.eretek.com/en/tools/cctv-project-capacity",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
